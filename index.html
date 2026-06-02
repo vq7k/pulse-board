@@ -1715,6 +1715,7 @@ const DATA = [
   {"date":"2026-05-02","time":"09:50","grade":"🟡","title":"Beyond the Answer: Decoding the Behavior of LLMs as Scientific Reasoners","source":"arxiv","sourceUrl":"https://arxiv.org/abs/2603.28038","domain":"AI Alignment","summary":"通过解码 LLM 在科学推理任务中的行为，探索其内部启发式方法，为 Prompt 优化和长期 AI 对齐提供思路。","status":"pushed","routeImpact":"Relevant for understanding and improving the reasoning process of LLMs.","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260502_0950_002","shortId":"P1105"},
   {"date":"2026-05-02","time":"09:50","grade":"🟡","title":"Mimetic Alignment with ASPECT: Evaluation of AI-inferred Personal Profiles","source":"arxiv","sourceUrl":"https://arxiv.org/abs/2603.26922","domain":"AI Alignment","summary":"提出 ASPECT 评估框架，用于评估 AI 对个人沟通风格的模仿对齐程度，为个性化 AI 对齐提供了新的评估工具。","status":"pushed","routeImpact":"A new evaluation method for a key aspect of personalized AI.","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260502_0950_003","shortId":"P1106"},
   {"date":"2026-05-02","time":"09:50","grade":"🟡","title":"EpiPersona: Persona Projection and Episode Coupling for Pluralistic Preference Modeling","source":"arxiv","sourceUrl":"https://arxiv.org/abs/2603.28197","domain":"AI Alignment","summary":"提出 EpiPersona 框架，通过角色投射和情景耦合来建模多元化偏好，旨在解决 LLM 对个体和少数群体偏好的适应性问题。","status":"pushed","routeImpact":"Addresses the important challenge of pluralistic AI alignment.","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260502_0950_004","shortId":"P1107"},
+  {"date":"2026-06-02","time":"11:00","grade":"🔵","title":"测试条目修复验证","source":"@test","sourceUrl":"https://test.com/2","domain":"test","summary":"验证无部署模式","pushCount":1,"alexStatus":"unread","insight":"","routeImpact":"","status":"pushed","id":"ps_20260602_1100_000","shortId":"P1108"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -1958,7 +1959,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-05-02 09:51';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-02 10:58';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
