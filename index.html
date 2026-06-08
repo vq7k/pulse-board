@@ -1858,6 +1858,8 @@ const DATA = [
   {"date":"2026-06-08","time":"18:15","grade":"🔵","title":"Antigravity 模型限额","source":"@sven_ai","sourceUrl":"https://x.com/sven_ai/status/2063806730195349937","domain":"ai-tooling","summary":"工具限额体验反馈，不构成路线调整依据。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260608_1815_010","shortId":"P1248"},
   {"date":"2026-06-08","time":"18:15","grade":"🔵","title":"/goal 用例分享","source":"@hylarucoder","sourceUrl":"https://x.com/hylarucoder/status/2063872965205189064","domain":"workflow","summary":"工作流用例分享，属于使用技巧。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260608_1815_011","shortId":"P1249"},
   {"date":"2026-06-08","time":"18:15","grade":"🔵","title":"SnapState - Persistent state for AI agent workflows","source":"HN 47759400","sourceUrl":"https://snapstate.dev","domain":"agent-state","summary":"Agent 状态持久化工具发布，证据量低且暂无路线级采用信号。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260608_1815_012","shortId":"P1250"},
+  {"date":"2026-06-08","time":"21:15","grade":"🟡","title":"Anthropic Project Glasswing Update","source":"HN 48444528","sourceUrl":"https://www.schneier.com/blog/archives/2026/06/anthropics-project-glasswing-update.html","domain":"AI Security","summary":"AI 辅助漏洞发现值得作为安全旁证，但当前主要是透明度/补丁率争议。","status":"skipped","routeImpact":"","insight":"不是安全框架、标准或 prompt injection/jailbreak 防御新方案，暂不推。","pushCount":1,"alexStatus":"unread","id":"ps_20260608_2115_000","shortId":"P1251"},
+  {"date":"2026-06-08","time":"21:15","grade":"🔵","title":"Config Files That Run Code: Supply Chain Security Blindspot","source":"HN 48443135","sourceUrl":"https://safedep.io/config-files-that-run-code/","domain":"Supply Chain Security","summary":"供应链安全文章，与 AI 安全学习路线关联间接。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260608_2115_001","shortId":"P1252"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2101,7 +2103,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-08 18:18';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-08 21:18';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
