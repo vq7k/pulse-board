@@ -1860,6 +1860,12 @@ const DATA = [
   {"date":"2026-06-08","time":"18:15","grade":"🔵","title":"SnapState - Persistent state for AI agent workflows","source":"HN 47759400","sourceUrl":"https://snapstate.dev","domain":"agent-state","summary":"Agent 状态持久化工具发布，证据量低且暂无路线级采用信号。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260608_1815_012","shortId":"P1250"},
   {"date":"2026-06-08","time":"21:15","grade":"🟡","title":"Anthropic Project Glasswing Update","source":"HN 48444528","sourceUrl":"https://www.schneier.com/blog/archives/2026/06/anthropics-project-glasswing-update.html","domain":"AI Security","summary":"AI 辅助漏洞发现值得作为安全旁证，但当前主要是透明度/补丁率争议。","status":"skipped","routeImpact":"","insight":"不是安全框架、标准或 prompt injection/jailbreak 防御新方案，暂不推。","pushCount":1,"alexStatus":"unread","id":"ps_20260608_2115_000","shortId":"P1251"},
   {"date":"2026-06-08","time":"21:15","grade":"🔵","title":"Config Files That Run Code: Supply Chain Security Blindspot","source":"HN 48443135","sourceUrl":"https://safedep.io/config-files-that-run-code/","domain":"Supply Chain Security","summary":"供应链安全文章，与 AI 安全学习路线关联间接。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260608_2115_001","shortId":"P1252"},
+  {"date":"2026-06-09","time":"09:15","grade":"🟡","title":"FrontierCode：编码评测从正确性转向生产可合并质量","source":"HN 48451723","sourceUrl":"https://cognition.ai/blog/frontier-code","domain":"coding-agent-evaluation","summary":"Cognition 发布 FrontierCode，衡量 maintainer 是否会合并 PR，关注测试质量、范围纪律、风格和代码库标准。","status":"pushed","routeImpact":"Alex 做 Coding Agent/Skills 项目时，应把 mergeability、测试质量、scope discipline、代码审查标准纳入验收，而不是只看任务跑通。","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260609_0915_000","shortId":"P1253"},
+  {"date":"2026-06-09","time":"09:15","grade":"🔵","title":"MiMo-V2.5-Pro-UltraSpeed：1T 模型 1000 tokens/s","source":"HN 48446639","sourceUrl":"https://mimo.xiaomi.com/blog/mimo-tilert-1000tps","domain":"model-inference","summary":"模型速度/推理产品动态，对 T3 国产模型可旁观，但不改变当前 Agent/Context 主线。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260609_0915_001","shortId":"P1254"},
+  {"date":"2026-06-09","time":"09:15","grade":"🔵","title":"Siri AI / Apple Intelligence 页面","source":"HN 48449084","sourceUrl":"https://www.apple.com/apple-intelligence/","domain":"ai-product","summary":"Apple 产品动态，不是框架采用、标准或学习路线切换信号。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260609_0915_002","shortId":"P1255"},
+  {"date":"2026-06-09","time":"09:15","grade":"🔵","title":"AI is slowing down","source":"HN 48446893","sourceUrl":"https://www.wheresyoured.at/ai-is-slowing-down/","domain":"ai-industry-opinion","summary":"行业观点文章，缺少对 Alex 技术学习路线的可执行校准。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260609_0915_003","shortId":"P1256"},
+  {"date":"2026-06-09","time":"09:15","grade":"🔵","title":"Apple Core AI Framework","source":"HN 48449665","sourceUrl":"https://developer.apple.com/documentation/coreai/","domain":"apple-framework","summary":"Apple 平台框架文档，暂未体现 JD/采用暴涨或 Alex 当前路线替代方案。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260609_0915_004","shortId":"P1257"},
+  {"date":"2026-06-09","time":"09:15","grade":"🔵","title":"Command Center：面向质量的 AI coding environment","source":"HN 48453002","sourceUrl":"https://www.cc.dev/","domain":"coding-agent-tool","summary":"新工具发布，方向与代码质量相关但证据量低，暂不单独作为路线级信号。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260609_0915_005","shortId":"P1258"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2103,7 +2109,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-08 21:18';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-09 09:17';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
