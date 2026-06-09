@@ -1869,6 +1869,7 @@ const DATA = [
   {"date":"2026-06-09","time":"12:15","grade":"🟡","title":"Apple reveals new AI architecture built around Google Gemini models","source":"HN 48450142","sourceUrl":"https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/","domain":"AI Architecture","summary":"头部公司工程决策值得观察，但暂未要求 Alex 转向 Apple 平台路线。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260609_1215_000","shortId":"P1259"},
   {"date":"2026-06-09","time":"12:15","grade":"🔵","title":"Ask HN: What are tools you have made for yourself since the advent of AI?","source":"HN 48449187","sourceUrl":"https://news.ycombinator.com/item?id=48449187","domain":"Community Discussion","summary":"社区工具经验讨论，不是路线级证据。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260609_1215_001","shortId":"P1260"},
   {"date":"2026-06-09","time":"12:15","grade":"🔵","title":"Apple bets cheaper AI will woo small developers","source":"HN 48452000","sourceUrl":"https://techcrunch.com/2026/06/08/apple-bets-cheaper-ai-will-woo-small-developers/","domain":"Platform Strategy","summary":"平台商业/开发者策略，不改变当前技术路线。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260609_1215_002","shortId":"P1261"},
+  {"date":"2026-06-09","time":"15:15","grade":"🔵","title":"OpenAI confidential S-1 submission","source":"HN 48452317","sourceUrl":"https://openai.com/index/openai-submits-confidential-s-1/","domain":"capital-market","summary":"公司上市/资本动态，不改变 Alex 接下来学什么。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260609_1515_000","shortId":"P1262"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2112,7 +2113,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-09 12:17';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-09 15:17';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
