@@ -1880,6 +1880,10 @@ const DATA = [
   {"date":"2026-06-10","time":"09:15","grade":"🔵","title":"Apple decided not to roll out Siri in EU after denied request for exemption","source":"HN 48463024","sourceUrl":"https://www.reuters.com/business/apple-failed-make-its-ai-tool-comply-eu-regulations-eu-commission-says-2026-06-09/","domain":"Platform/Product","summary":"Apple 平台合规/产品动态，不是框架采用、标准或学习路线切换信号。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260610_0915_004","shortId":"P1270"},
   {"date":"2026-06-10","time":"09:15","grade":"🔵","title":"Ultrafast machine learning on FPGAs via Kolmogorov-Arnold Networks","source":"HN 48466277","sourceUrl":"https://aarushgupta.io/posts/kan-fpga/","domain":"ML Systems","summary":"硬件/模型加速技术文章，和当前 Agent/Context 路线关联间接。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260610_0915_005","shortId":"P1271"},
   {"date":"2026-06-10","time":"09:15","grade":"🔵","title":"Nucleus – security-hardened Nix-native container runtime","source":"HN 48469039","sourceUrl":"https://github.com/sig-id/nucleus","domain":"Security Infrastructure","summary":"容器安全工具发布，与 AI 安全框架、标准或 prompt injection 防御路线无直接关系。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260610_0915_006","shortId":"P1272"},
+  {"date":"2026-06-10","time":"12:15","grade":"🔵","title":"macOS Container Machines","source":"HN 48469658","sourceUrl":"https://github.com/apple/container/blob/main/docs/container-machine.md","domain":"Platform/Containers","summary":"Apple 容器运行环境文档。","status":"skipped","routeImpact":"","insight":"非 AI 框架采用或学习路线切换信号。","pushCount":1,"alexStatus":"unread","id":"ps_20260610_1215_000","shortId":"P1273"},
+  {"date":"2026-06-10","time":"12:15","grade":"🔵","title":"German ruling declares Google liable for false answers in AI Overviews","source":"HN 48470248","sourceUrl":"https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/","domain":"AI Legal Risk","summary":"德国裁定 Google 需为 AI Overviews 错误回答负责。","status":"skipped","routeImpact":"","insight":"法律责任信号值得旁观，但不改变接下来学什么。","pushCount":1,"alexStatus":"unread","id":"ps_20260610_1215_001","shortId":"P1274"},
+  {"date":"2026-06-10","time":"12:15","grade":"🟡","title":"Grit: Rewriting Git in Rust with agents","source":"HN 48466812","sourceUrl":"https://blog.gitbutler.com/true-grit","domain":"Agent Coding","summary":"用 agents 参与重写 Git 的系统软件项目故事。","status":"skipped","routeImpact":"","insight":"值得观察，但目前是项目实践，未形成框架采用或路线替代信号。","pushCount":1,"alexStatus":"unread","id":"ps_20260610_1215_002","shortId":"P1275"},
+  {"date":"2026-06-10","time":"12:15","grade":"🔵","title":"Rich Sutton on AI creativity and discovery","source":"HN 48470581","sourceUrl":"https://twitter.com/RichardSSutton/status/2061216087744946656","domain":"AI Research Opinion","summary":"Rich Sutton 关于 AI 创造力与发现的观点。","status":"skipped","routeImpact":"","insight":"权威观点但信息量不足，未给出可执行学习路线判断。","pushCount":1,"alexStatus":"unread","id":"ps_20260610_1215_003","shortId":"P1276"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2123,7 +2127,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-10 09:17';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-10 12:18';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
