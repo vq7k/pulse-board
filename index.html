@@ -1885,6 +1885,10 @@ const DATA = [
   {"date":"2026-06-10","time":"12:15","grade":"🟡","title":"Grit: Rewriting Git in Rust with agents","source":"HN 48466812","sourceUrl":"https://blog.gitbutler.com/true-grit","domain":"Agent Coding","summary":"用 agents 参与重写 Git 的系统软件项目故事。","status":"skipped","routeImpact":"","insight":"值得观察，但目前是项目实践，未形成框架采用或路线替代信号。","pushCount":1,"alexStatus":"unread","id":"ps_20260610_1215_002","shortId":"P1275"},
   {"date":"2026-06-10","time":"12:15","grade":"🔵","title":"Rich Sutton on AI creativity and discovery","source":"HN 48470581","sourceUrl":"https://twitter.com/RichardSSutton/status/2061216087744946656","domain":"AI Research Opinion","summary":"Rich Sutton 关于 AI 创造力与发现的观点。","status":"skipped","routeImpact":"","insight":"权威观点但信息量不足，未给出可执行学习路线判断。","pushCount":1,"alexStatus":"unread","id":"ps_20260610_1215_003","shortId":"P1276"},
   {"date":"2026-06-10","time":"15:15","grade":"🔵","title":"Surprise, Pay $1000","source":"HN 48468370","sourceUrl":"https://forestwalk.ai/blog/surprise-blacksmith-costs/","domain":"billing","summary":"费用/产品体验类文章，不影响 AI 技术学习路线。","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260610_1515_000","shortId":"P1277"},
+  {"date":"2026-06-10","time":"19:55","grade":"🔵","title":"Vibe coding my way to a healthy family: Introducing Gamow Labs","source":"HN 48471048","sourceUrl":"https://www.ddmckinnon.com/2026/06/09/vibe-coding-my-way-to-a-healthy-family-introducing-gamow-labs/","domain":"AI Engineering","summary":"145 points","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260610_1955_000","shortId":"P1278"},
+  {"date":"2026-06-10","time":"19:55","grade":"🔵","title":"AWS Bedrock to require sharing data with Anthropic for Mythos and future models","source":"HN 48473166","sourceUrl":"https://news.ycombinator.com/item?id=48473166","domain":"AI Engineering","summary":"125 points","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260610_1955_001","shortId":"P1279"},
+  {"date":"2026-06-10","time":"19:55","grade":"🔵","title":"Notepad++ Zero-Click RCE via Path Traversal (CVE-2026-52884)","source":"HN 48473731","sourceUrl":"https://github.com/notepad-plus-plus/notepad-plus-plus/security/advisories/GHSA-p58x-r3c9-x9p6","domain":"Security","summary":"21 points","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260610_1955_002","shortId":"P1280"},
+  {"date":"2026-06-10","time":"19:55","grade":"🔵","title":"Show HN: macOS menu bar gauges for your Claude Code quota","source":"HN 48473845","sourceUrl":"https://github.com/grzegorz-raczek-unit8/claude-quota","domain":"AI Engineering","summary":"7 points","status":"skipped","routeImpact":"","insight":"","pushCount":1,"alexStatus":"unread","id":"ps_20260610_1955_003","shortId":"P1281"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2128,7 +2132,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-10 15:17';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-10 19:57';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
