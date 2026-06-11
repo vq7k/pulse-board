@@ -1916,6 +1916,9 @@ const DATA = [
   {"date":"2026-06-11","time":"18:15","grade":"🔵","title":"Anthropic 课程中文版发布","source":"@wangray","sourceUrl":"https://x.com/wangray/status/2064989828991901937","domain":"Learning Resource","summary":"Anthropic 官方课程中文整理，适合学习 Claude Code 使用；属于资料整理，不是路线级信号。","status":"skipped","routeImpact":"不改变路线；可作为资源收藏。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260611_1815_005","shortId":"P1306"},
   {"date":"2026-06-11","time":"18:15","grade":"🔵","title":"Why AI hasn't replaced software engineers, and won't","source":"HN 48487540","sourceUrl":"https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers","domain":"AI Engineering Career","summary":"软件工程师不会被 AI 替代的观点文，HN 分数较低，缺少新量化证据或路线建议。","status":"skipped","routeImpact":"不改变学习路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260611_1815_006","shortId":"P1307"},
   {"date":"2026-06-11","time":"18:15","grade":"🔵","title":"Build a Basic AI Agent from Scratch: Long Task Planning","source":"HN 48461635","sourceUrl":"https://medium.com/@rogi23696/build-a-basic-ai-agent-from-scratch-long-task-planning-14e803f9bd6d","domain":"Agent Tutorial","summary":"从零构建 long-task planning agent 的教程，HN 分数很低，属于教程内容，不是路线级采用/替代信号。","status":"skipped","routeImpact":"不改变路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260611_1815_007","shortId":"P1308"},
+  {"date":"2026-06-11","time":"21:15","grade":"🔵","title":"Fable 领先 AI / 新产品类别判断","source":"@victormustar","sourceUrl":"https://x.com/victormustar/status/2065054373567238459","domain":"AI Model/Product","summary":"Hugging Face 产品负责人评价 Fable 模型领先并形成新产品类别。属于模型/产品竞争动态与主观判断，未给出 Alex 学习路线可执行改变。","status":"skipped","routeImpact":"不调整路线；继续维持 Agent/Context/AI Security 主线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260611_2115_000","shortId":"P1309"},
+  {"date":"2026-06-11","time":"21:15","grade":"🟡","title":"AI 检测误报与防御者负担","source":"@pelaseyed","sourceUrl":"https://x.com/pelaseyed/status/2065015060502544758","domain":"AI Security Evaluation","summary":"Prisma CLI 被 Microsoft Defender 误报；推文称 Fable/Mythos 模型误报率达 30%。命中 AI 安全评估/误报问题，但目前是单条推文与产品案例，缺少可复核评测或路线级方法论。","status":"skipped","routeImpact":"暂不推送；可作为后续 AI 安全评估主题的观察点。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260611_2115_001","shortId":"P1310"},
+  {"date":"2026-06-11","time":"21:15","grade":"🔵","title":"Show HN: Extend UI – open-source UI kit for modern document apps","source":"HN 48478469","sourceUrl":"https://www.extend.ai/ui","domain":"Developer Tooling","summary":"现代文档应用 UI kit，227 points；工具/UI 发布，与 Alex 当前 Agent/Context/AI Security 学习路线关联弱。","status":"skipped","routeImpact":"不改变路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260611_2115_002","shortId":"P1311"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2159,7 +2162,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-11 18:21';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-11 21:17';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
