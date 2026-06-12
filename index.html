@@ -1929,6 +1929,8 @@ const DATA = [
   {"date":"2026-06-12","time":"09:15","grade":"🔵","title":"Lines of code got a better publicist","source":"HN 48489402","sourceUrl":"https://curlewis.co.nz/posts/lines-of-code-got-a-better-publicist/","domain":"HN / Software Engineering","summary":"跳过：352 points；代码行数/AI 编程叙事讨论，偏观点与行业表达，不是路线级信号。","status":"skipped","insight":"","routeImpact":"不改变 coding agent 学习重点。","pushCount":1,"alexStatus":"unread","id":"ps_20260612_0915_007","shortId":"P1319"},
   {"date":"2026-06-12","time":"09:15","grade":"🟡","title":"Anthropic apologizes for invisible Claude Fable guardrails","source":"HN 48489229","sourceUrl":"https://www.theverge.com/ai-artificial-intelligence/948280/anthropic-claude-fable-invisible-distillation-guardrail","domain":"HN / AI Safety","summary":"跳过：307 points；与 Fable guardrails 透明度相关，但仍偏产品政策/沟通问题，缺少可执行安全工程框架；不重复推送。","status":"skipped","insight":"","routeImpact":"AI 安全旁观项，不改变本轮学习路线。","pushCount":1,"alexStatus":"unread","id":"ps_20260612_0915_008","shortId":"P1320"},
   {"date":"2026-06-12","time":"09:15","grade":"🔵","title":"Making a vintage LLM from scratch","source":"HN 48487829","sourceUrl":"https://crlf.link/log/entries/260525-1/","domain":"HN / LLM","summary":"跳过：16 points；从零做 vintage LLM 的学习/复古项目，与 Agent/Context 工程路线间接。","status":"skipped","insight":"","routeImpact":"不影响当前路线。","pushCount":1,"alexStatus":"unread","id":"ps_20260612_0915_009","shortId":"P1321"},
+  {"date":"2026-06-12","time":"09:50","grade":"🟡","title":"Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks","source":"HF Daily / arXiv 2606.12344","sourceUrl":"https://arxiv.org/abs/2606.12344","domain":"Agent Harness / Evaluation","summary":"把通用 agent 接入 SWE-bench 式评分所需的 prompt、runtime budget、workspace、patch 与预测协议固定下来，适合 Alex 校准 coding agent harness 的可比评测方法。","status":"pushed","insight":"T2-Context Engineering","routeImpact":"补强 Agent/Coding Harness 验收体系：固定环境、预算、协议与可复现实验，而不是只看单模型 benchmark 分数。","pushCount":1,"alexStatus":"unread","id":"ps_20260612_0950_000","shortId":"P1322"},
+  {"date":"2026-06-12","time":"09:50","grade":"🟡","title":"Can Generalist Agents Automate Data Curation?","source":"HF Daily / arXiv 2606.04261","sourceUrl":"https://arxiv.org/abs/2606.04261","domain":"Agent Workflow / Data Curation","summary":"把数据清洗/策略迭代做成 agent 可执行闭环，虽然场景是 data curation，但方法可迁移到 Alex 的 agent harness、评估反馈和长期任务自动化。","status":"pushed","insight":"T2-Context Engineering","routeImpact":"提示 Alex 关注 agent 不只写代码，也能执行“提出策略→改数据/代码→评估→修正”的闭环工作流。","pushCount":1,"alexStatus":"unread","id":"ps_20260612_0950_001","shortId":"P1323"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2172,7 +2174,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-12 09:18';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-12 09:51';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
