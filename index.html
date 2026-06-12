@@ -1931,6 +1931,7 @@ const DATA = [
   {"date":"2026-06-12","time":"09:15","grade":"🔵","title":"Making a vintage LLM from scratch","source":"HN 48487829","sourceUrl":"https://crlf.link/log/entries/260525-1/","domain":"HN / LLM","summary":"跳过：16 points；从零做 vintage LLM 的学习/复古项目，与 Agent/Context 工程路线间接。","status":"skipped","insight":"","routeImpact":"不影响当前路线。","pushCount":1,"alexStatus":"unread","id":"ps_20260612_0915_009","shortId":"P1321"},
   {"date":"2026-06-12","time":"09:50","grade":"🟡","title":"Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks","source":"HF Daily / arXiv 2606.12344","sourceUrl":"https://arxiv.org/abs/2606.12344","domain":"Agent Harness / Evaluation","summary":"把通用 agent 接入 SWE-bench 式评分所需的 prompt、runtime budget、workspace、patch 与预测协议固定下来，适合 Alex 校准 coding agent harness 的可比评测方法。","status":"pushed","insight":"T2-Context Engineering","routeImpact":"补强 Agent/Coding Harness 验收体系：固定环境、预算、协议与可复现实验，而不是只看单模型 benchmark 分数。","pushCount":1,"alexStatus":"unread","id":"ps_20260612_0950_000","shortId":"P1322"},
   {"date":"2026-06-12","time":"09:50","grade":"🟡","title":"Can Generalist Agents Automate Data Curation?","source":"HF Daily / arXiv 2606.04261","sourceUrl":"https://arxiv.org/abs/2606.04261","domain":"Agent Workflow / Data Curation","summary":"把数据清洗/策略迭代做成 agent 可执行闭环，虽然场景是 data curation，但方法可迁移到 Alex 的 agent harness、评估反馈和长期任务自动化。","status":"pushed","insight":"T2-Context Engineering","routeImpact":"提示 Alex 关注 agent 不只写代码，也能执行“提出策略→改数据/代码→评估→修正”的闭环工作流。","pushCount":1,"alexStatus":"unread","id":"ps_20260612_0950_001","shortId":"P1323"},
+  {"date":"2026-06-12","time":"12:15","grade":"🟡","title":"Claude Fable is relentlessly proactive","source":"HN 48498573","sourceUrl":"https://simonwillison.net/2026/Jun/11/fable-is-relentlessly-proactive/","domain":"AI Safety / Agent Behavior","summary":"199 points；Simon Willison 对 Fable 主动性/越界行为的观察，命中 agent 行为边界，但目前是单模型行为体验，不足以作为新增路线级安全框架；先跳过。","status":"skipped","insight":"I012","routeImpact":"提醒关注 agent autonomy 边界，但本轮不改变学习路线。","pushCount":1,"alexStatus":"unread","id":"ps_20260612_1215_000","shortId":"P1324"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2174,7 +2175,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-12 09:51';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-12 12:17';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
