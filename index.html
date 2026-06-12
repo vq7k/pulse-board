@@ -1935,6 +1935,8 @@ const DATA = [
   {"date":"2026-06-12","time":"15:15","grade":"🔴","title":"AI agent bankrupted their operator while trying to scan DN42","source":"HN 48500012","sourceUrl":"https://lantian.pub/en/article/fun/ai-agent-bankrupted-their-operator-scan-dn42lantian.lantian/","domain":"AI Security / Agent Governance","summary":"真实 agent 自主执行网络接入/扫描任务导致 $6531.30 AWS 账单，244 points；web_search 补充原文确认涉及 DN42 注册、网络扫描意图、AWS key 截止期与无人充分治理的 agent 行为。","status":"pushed","routeImpact":"Alex 的 AI 安全与 agent 工程路线应把 cost-aware guardrails、云资源预算上限、网络扫描权限、人审审批点、kill switch 和审计日志列为必学实践。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260612_1515_000","shortId":"P1325"},
   {"date":"2026-06-12","time":"15:15","grade":"🔵","title":"Infracost is hiring Sr Dev Advocate to make agents cloud cost-aware","source":"HN 48141191","sourceUrl":"https://www.ycombinator.com/companies/infracost/jobs/NzwUQ7c-senior-developer-advocate","domain":"AI Jobs / Cost Governance","summary":"YC 招聘条目明确提到让 agents cloud cost-aware；与本轮 DN42/AWS 账单案例方向一致，但单条招聘不足以作为 JD 频率信号。","status":"skipped","routeImpact":"作为 cost-aware agent 趋势旁证；等待更多 JD/采用信号再升级。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260612_1515_001","shortId":"P1326"},
   {"date":"2026-06-12","time":"15:15","grade":"🔵","title":"Substrate AI Is Hiring Harness Engineers","source":"HN 47802016","sourceUrl":"https://www.ycombinator.com/companies/substrate/jobs/QJU9023-harness-engineer","domain":"AI Jobs / Agent Harness","summary":"YC 招聘条目出现 Harness Engineers；命中 Alex 的 agent harness 方向，但单条招聘不足以证明 JD 频率变化。","status":"skipped","routeImpact":"继续观察；不单独推送。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260612_1515_002","shortId":"P1327"},
+  {"date":"2026-06-12","time":"20:59","grade":"🔵","title":"How Terry Tao became an evangelist for AI in math","source":"HN 48446673","sourceUrl":"https://www.quantamagazine.org/how-terry-tao-became-an-evangelist-for-ai-in-math-20260608/","domain":"AI in Math","summary":"跳过：权威人物对 AI in math 的态度有参考价值，但主题偏数学研究协作，不直接改变 Alex 的 Agent/Context/AI Safety 学习路线。","status":"skipped","routeImpact":"可旁观，不调整当前路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260612_2059_000","shortId":"P1328"},
+  {"date":"2026-06-12","time":"20:59","grade":"🔵","title":"Kimi K2.7-Code: open-source coding model with better token efficiency","source":"HN 48502347","sourceUrl":"https://huggingface.co/moonshotai/Kimi-K2.7-Code","domain":"Coding Model","summary":"跳过：国产/开源 coding model 发布，和 I004 可旁观相关，但目前只是模型发布，缺少采用、JD、真实评测或学习路线替代证据。","status":"skipped","routeImpact":"不改变当前优先级：Agent harness / Context Engineering / AI Safety。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260612_2059_001","shortId":"P1329"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2178,7 +2180,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-12 15:18';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-12 21:01';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
