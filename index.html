@@ -1955,6 +1955,7 @@ const DATA = [
   {"date":"2026-06-13","time":"12:15","grade":"🔵","title":"Malware developers added nuclear and biological weapons text to their spyware","source":"HN 48495928","sourceUrl":"https://twitter.com/jsrailton/status/2064661778978533571","domain":"Cybersecurity","summary":"337 points；通用恶意软件/地缘安全事件，和 AI agent 攻击面或 AI 安全工程路线关联不足。","status":"skipped","routeImpact":"不纳入 Pulse 路线级 AI 信号。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260613_1215_004","shortId":"P1345"},
   {"date":"2026-06-13","time":"12:15","grade":"🔵","title":"/architect: Reduce Fable tokens by 80%, Fable orchestrates/reviews, Codex builds","source":"HN 48509133","sourceUrl":"https://github.com/DanMcInerney/architect-loop","domain":"Agent Cost / Coding Workflow","summary":"74 points；命中 cost-aware agent 编排，但目前是单个工具/repo 发布，缺少采用、评测或 JD 信号。","status":"skipped","routeImpact":"继续沿用 cost-aware harness 方向观察；不因单工具改变学习路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260613_1215_005","shortId":"P1346"},
   {"date":"2026-06-13","time":"12:15","grade":"🔵","title":"Launch HN: BitBoard (YC P25) – Analytics Workspace for Agents","source":"HN 48506545","sourceUrl":"https://bitboard.work/","domain":"Agent Analytics Product","summary":"37 points；agent analytics 产品发布，暂未形成学习路线替代或采用证据。","status":"skipped","routeImpact":"不改变路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260613_1215_006","shortId":"P1347"},
+  {"date":"2026-06-13","time":"15:15","grade":"🔵","title":"Shepherd's Dog: A Game by the Most Dangerous AI Model","source":"HN 48513728","sourceUrl":"https://koenvangilst.nl/lab/claude-fable-shepherds-dog","domain":"AI Product","summary":"23 points；Fable 相关游戏/展示作品，偏产品体验与叙事，不是 AI safety 工程框架、真实攻击案例或路线替代。","status":"skipped","insight":"","routeImpact":"不改变学习路线。","pushCount":1,"alexStatus":"unread","id":"ps_20260613_1515_000","shortId":"P1348"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2198,7 +2199,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-13 12:18';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-13 15:17';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
