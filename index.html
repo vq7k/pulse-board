@@ -1992,6 +1992,8 @@ const DATA = [
   {"date":"2026-06-15","time":"18:15","grade":"🔵","title":"Show HN: Trace – Offline Mac meeting transcripts you can flag mid-call","source":"HN 48521236","sourceUrl":"https://traceapp.info","domain":"AI Tooling","summary":"163 points；离线会议转录与标记工具，属于个人效率/产品工具，不是 Agent/Context/AI Safety 路线级信号。","status":"skipped","routeImpact":"工具发布，不改变学习路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260615_1815_000","shortId":"P1372"},
   {"date":"2026-06-15","time":"18:15","grade":"🔵","title":"Anthropic flies staff to D.C. to clean up White House fight","source":"HN 48538737","sourceUrl":"https://www.axios.com/2026/06/14/anthropic-white-house-mythos-fable","domain":"AI Policy","summary":"10 points；与 06-13 已推送的 Fable/Mythos 政府暂停访问事件同主题，新增主要是政治/公关背景，不改变 AI safety 学习建议。","status":"skipped","routeImpact":"同主题背景噪声，不重复推送。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260615_1815_001","shortId":"P1373"},
   {"date":"2026-06-15","time":"18:15","grade":"🔵","title":"Openrouter Fusion API","source":"HN 48537641","sourceUrl":"https://openrouter.ai/openrouter/fusion","domain":"Model Routing Tooling","summary":"9 points；模型路由/API 产品发布，暂无采用、JD、弃用或路线替代证据。","status":"skipped","routeImpact":"新工具发布，不改变当前路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260615_1815_002","shortId":"P1374"},
+  {"date":"2026-06-15","time":"21:15","grade":"🔵","title":"Anthropic's Safety Superpower","source":"HN 48539078","sourceUrl":"https://stratechery.com/2026/anthropics-safety-superpower/","domain":"AI Safety / Strategy","summary":"120 points；主题命中 AI safety，但属于商业战略/定位分析，不是安全框架、标准、真实攻击案例或会改变学习路线的工程证据。","status":"skipped","routeImpact":"可作为背景观察，不改变当前 AI safety 学习建议。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260615_2115_000","shortId":"P1375"},
+  {"date":"2026-06-15","time":"21:15","grade":"🔵","title":"Show HN: I wrote a C++ ray tracer from scratch without AI","source":"HN 48538833","sourceUrl":"https://github.com/themartiano/luz","domain":"Non-AI Engineering","summary":"39 points；标题命中 AI 但内容是不用 AI 写 C++ ray tracer，非 Alex 当前 Agent/Context/AI Safety 路线信号。","status":"skipped","routeImpact":"非路线级 AI 信号。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260615_2115_001","shortId":"P1376"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2235,7 +2237,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-15 18:17';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-15 21:18';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
