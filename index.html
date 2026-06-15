@@ -1989,6 +1989,9 @@ const DATA = [
   {"time":"2026-06-15 09:15","source":"HN 48485277","sourceUrl":"https://fulcrum.inc/2026/06/09/inverse-rubric-optimization.html","title":"Inverse Rubric Optimization: A testbed for agent science","level":"🔵","action":"skip","reason":"命中 agent science/rubric，但 points 较低且为单篇方法观点；可观察，不单独推送。","pushCount":1,"alexStatus":"unread","insight":"","routeImpact":"","status":"pushed","id":"ps_20260615_2026-06-15 0915_004","shortId":"P1369"},
   {"date":"2026-06-15","time":"12:15","grade":"🔵","title":"David Sacks on Anthropic export control","source":"HN 48529358","sourceUrl":"https://twitter.com/DavidSacks/status/2065853007619588171","domain":"AI Safety / 政策","summary":"HN 8 points；Anthropic export control 相关政治/政策评论。","insight":"与 06-13 已推送 Fable/Mythos 政府暂停访问事件同主题，未提供新的技术/治理证据。","routeImpact":"不改变已给出的 AI safety 学习建议，不重复刷屏。","status":"skipped","pushCount":1,"alexStatus":"unread","id":"ps_20260615_1215_000","shortId":"P1370"},
   {"date":"2026-06-15","time":"15:15","grade":"🔵","title":"Apple Foundation Models","source":"HN 48536776","sourceUrl":"https://platform.claude.com/docs/en/cli-sdks-libraries/libraries/apple-foundation-models","domain":"Model SDK","summary":"12 points；Apple Foundation Models 相关 SDK 文档/库条目，属于平台接入资料，缺少采用、JD 或路线替代证据。","status":"skipped","routeImpact":"工具/SDK 资料，不改变当前学习路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260615_1515_000","shortId":"P1371"},
+  {"date":"2026-06-15","time":"18:15","grade":"🔵","title":"Show HN: Trace – Offline Mac meeting transcripts you can flag mid-call","source":"HN 48521236","sourceUrl":"https://traceapp.info","domain":"AI Tooling","summary":"163 points；离线会议转录与标记工具，属于个人效率/产品工具，不是 Agent/Context/AI Safety 路线级信号。","status":"skipped","routeImpact":"工具发布，不改变学习路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260615_1815_000","shortId":"P1372"},
+  {"date":"2026-06-15","time":"18:15","grade":"🔵","title":"Anthropic flies staff to D.C. to clean up White House fight","source":"HN 48538737","sourceUrl":"https://www.axios.com/2026/06/14/anthropic-white-house-mythos-fable","domain":"AI Policy","summary":"10 points；与 06-13 已推送的 Fable/Mythos 政府暂停访问事件同主题，新增主要是政治/公关背景，不改变 AI safety 学习建议。","status":"skipped","routeImpact":"同主题背景噪声，不重复推送。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260615_1815_001","shortId":"P1373"},
+  {"date":"2026-06-15","time":"18:15","grade":"🔵","title":"Openrouter Fusion API","source":"HN 48537641","sourceUrl":"https://openrouter.ai/openrouter/fusion","domain":"Model Routing Tooling","summary":"9 points；模型路由/API 产品发布，暂无采用、JD、弃用或路线替代证据。","status":"skipped","routeImpact":"新工具发布，不改变当前路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260615_1815_002","shortId":"P1374"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2232,7 +2235,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-15 15:17';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-15 18:17';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
