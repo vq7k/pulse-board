@@ -2013,6 +2013,7 @@ const DATA = [
   {"date":"2026-06-16","time":"15:15","grade":"🔵","title":"The 90-year-old idea behind JEPA models: Canonical Correlation Analysis","source":"HN 48490578","sourceUrl":"https://shonczinner.github.io/posts/embedding-prediction/","domain":"Model theory","summary":"跳过：43 points；模型理论解释文章，有学习价值但不是 Agent/Context/AI Safety 路线替代、技术弃用或权威定量判断。","status":"skipped","insight":"","routeImpact":"暂不影响 Alex 接下来学什么。","pushCount":1,"alexStatus":"unread","id":"ps_20260616_1515_001","shortId":"P1393"},
   {"date":"2026-06-16","time":"15:22","grade":"🔵","title":"Salesforce to Acquire Fin (formerly Intercom) for $3.6B","source":"HN 48540126","sourceUrl":"https://www.salesforce.com/news/press-releases/2026/06/15/salesforce-signs-definitive-agreement-to-acquire-fin/?bc=HL","domain":"AI customer service / M&A","summary":"跳过：300 points；AI 客服/agent 产品收购，偏商业整合与产品竞争动态，不是学习路线替代、技术弃用、权威定量判断或安全案例。","status":"skipped","insight":"","routeImpact":"不改变 Agent/Context/AI Safety 学习优先级。","pushCount":1,"alexStatus":"unread","id":"ps_20260616_1522_000","shortId":"P1394"},
   {"date":"2026-06-16","time":"15:22","grade":"🔵","title":"A backdoor in a LinkedIn job offer","source":"HN 48546294","sourceUrl":"https://roman.pt/posts/linkedin-backdoor/","domain":"Security","summary":"跳过：1025 points；真实安全攻击案例，但不是 AI/LLM/agent 攻击面、prompt injection、防护框架或 AI 安全标准案例。","status":"skipped","insight":"","routeImpact":"与 Alex 当前 AI Safety 路线关联间接。","pushCount":1,"alexStatus":"unread","id":"ps_20260616_1522_001","shortId":"P1395"},
+  {"date":"2026-06-16","time":"18:15","grade":"🔵","title":"Show HN: SharkClean MCP","source":"HN 48505910","sourceUrl":"https://github.com/a-funk/sharkclean-mcp","domain":"MCP toy integration","summary":"跳过：10 points；MCP 家电控制演示，偏玩具集成/新工具发布，不是 MCP 学习路线替代或采用信号。","status":"skipped","insight":"","routeImpact":"无直接路线调整","pushCount":1,"alexStatus":"unread","id":"ps_20260616_1815_000","shortId":"P1396"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2256,7 +2257,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-16 15:24';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-16 18:18';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
