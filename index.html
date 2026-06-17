@@ -2030,6 +2030,8 @@ const DATA = [
   {"date":"2026-06-17","time":"09:50","grade":"🔴","title":"CoAgent: Concurrency Control for Multi-Agent Systems","source":"arXiv 2606.15376","sourceUrl":"https://arxiv.org/abs/2606.15376","domain":"Multi-Agent Systems / Concurrency Control","summary":"把多 agent 同时修改 git tree、Kubernetes 或文档时的冲突视为并发控制问题，对真实 agent 工程非常直接。","status":"pushed","insight":"","routeImpact":"Alex 做 multi-agent/coding agent 时需要补 shared state、事务边界、锁与冲突恢复。","pushCount":1,"alexStatus":"unread","id":"ps_20260617_0950_004","shortId":"P1410"},
   {"date":"2026-06-17","time":"09:50","grade":"🔴","title":"XFlow: An Executable Protocol Programming System for Reliable Multi-Agent Workflows","source":"arXiv 2606.14790","sourceUrl":"https://arxiv.org/abs/2606.14790","domain":"Agent Harness / Workflow Protocols","summary":"明确讨论 prompt-harness 边界，把 workflow commitments 编成可执行协议，正中 Alex 要补的 agent harness 可靠性。","status":"pushed","insight":"","routeImpact":"路线重点应从“写更长 prompt”转向“哪些约束应沉到 harness/protocol 结构里”。","pushCount":1,"alexStatus":"unread","id":"ps_20260617_0950_005","shortId":"P1411"},
   {"date":"2026-06-17","time":"09:50","grade":"🔴","title":"SkillVetBench: LLM-as-Judge for Multi-Dimensional Security Risk Evaluation in Open-Source LLM Agent Skills","source":"arXiv 2606.15899","sourceUrl":"https://arxiv.org/abs/2606.15899","domain":"AI Safety / Agent Skills Security","summary":"把开源 agent skill 的自然语言指令层风险纳入评估，覆盖 prompt injection、数据外泄和跨 pipeline 伤害。","status":"pushed","insight":"","routeImpact":"AI Safety 学习要覆盖 skill/plugin/MCP 生态的指令层审计，而不只是代码扫描。","pushCount":1,"alexStatus":"unread","id":"ps_20260617_0950_006","shortId":"P1412"},
+  {"date":"2026-06-17","time":"12:15","grade":"🔵","title":"Apple is about to make Hide My Email useless","source":"HN 48559935","sourceUrl":"https://arseniyshestakov.com/2026/06/16/apple-is-about-to-make-hide-my-email-useless/","domain":"privacy","summary":"426 points；隐私/平台策略变化，和 Alex 当前 Agent/Context/AI Safety 技术路线关联间接。","status":"skipped","routeImpact":"不改变学习路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260617_1215_000","shortId":"P1413"},
+  {"date":"2026-06-17","time":"12:15","grade":"🔵","title":"Leaked OpenAI financials show $38.5B loss and compute burn","source":"HN 48565130","sourceUrl":"https://runtimewire.com/article/openai-leaked-financials-altman-compute-burn","domain":"ai-business","summary":"7 points；商业/财务传闻类动态，缺少技术路线、框架采用或学习方向证据。","status":"skipped","routeImpact":"不改变学习路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260617_1215_001","shortId":"P1414"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2273,7 +2275,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-17 09:53';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-17 12:19';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
