@@ -2049,6 +2049,8 @@ const DATA = [
   {"date":"2026-06-18","time":"09:50","grade":"🟡","title":"An Evaluation of Data Leakage Risks in Tool-Using LLM Agents in Realistic Scenarios","source":"arXiv 2606.17114","sourceUrl":"https://arxiv.org/abs/2606.17114","domain":"Tool-Using Agents / Data Leakage","summary":"Tool-using agents may leak sensitive information even in non-adversarial use, not only under explicit prompt injection or jailbreak attacks.","status":"pushed","routeImpact":"可迁移到个人/企业 agent 设计：权限最小化、data boundary、logging/redaction 和 tool-output policy 都应纳入安全基本功。","pushCount":1,"alexStatus":"unread","insight":"I012","id":"ps_20260618_0950_003","shortId":"P1429"},
   {"date":"2026-06-18","time":"12:15","grade":"🔵","title":"US holds off blacklisting DeepSeek, more than 100 firms deemed security risks","source":"HN 48565498","sourceUrl":"https://www.reuters.com/world/china/us-holds-off-blacklisting-chinas-deepseek-more-than-100-firms-deemed-security-2026-06-17/","domain":"AI Policy","summary":"跳过：DeepSeek 黑名单/安全风险属政策与供应链风险动态，缺少直接学习路线替代、技术弃用、权威技术定量判断或具体 AI 攻击案例。","status":"skipped","insight":"","routeImpact":"暂不改变 Alex 当前 Agent/Context/AI Safety 技术学习路线。","pushCount":1,"alexStatus":"unread","id":"ps_20260618_1215_000","shortId":"P1430"},
   {"date":"2026-06-18","time":"12:15","grade":"🔵","title":"[x86] AI Compute Extensions (ACE) Specification","source":"HN 48579913","sourceUrl":"https://x86ecosystem.org/resource/ai-compute-extensions-ace-specification/","domain":"Hardware/Inference","summary":"跳过：x86 AI Compute Extensions 是硬件/指令集规范信号，当前热度和路线关联不足；不是 Alex 当前 Agentic RAG、Context Engineering 或 AI Safety 优先学习项。","status":"skipped","insight":"","routeImpact":"不改变当前软件工程/agent 安全路线。","pushCount":1,"alexStatus":"unread","id":"ps_20260618_1215_001","shortId":"P1431"},
+  {"date":"2026-06-18","time":"15:15","grade":"🔵","title":"Local Qwen isn't a worse Opus, it's a different tool","source":"HN 48580209","sourceUrl":"https://blog.alexellis.io/local-ai-is-not-opus/","domain":"Local Models","summary":"跳过：136 points；本地 Qwen/Claude Opus 的定位对比是有用实践观察，但属于个人经验，不是权威定量判断、JD 变化或稳定路线替代证据。","status":"skipped","insight":"I004/T3 国产模型选型","routeImpact":"继续观察本地模型作为辅助工具；暂不改变 Context Engineering / Agent Memory / AI Safety 优先级。","pushCount":1,"alexStatus":"unread","id":"ps_20260618_1515_000","shortId":"P1432"},
+  {"date":"2026-06-18","time":"15:15","grade":"🔵","title":"DeepSeek Introduces Vision","source":"HN 48581458","sourceUrl":"https://chat.deepseek.com/","domain":"Model Release","summary":"跳过：29 points；产品能力上线/新工具发布，缺少采用暴涨、权威定量判断、技术弃用或学习路线替代证据。","status":"skipped","insight":"I004/T3 国产模型选型","routeImpact":"不改变 Alex 当前学习路线。","pushCount":1,"alexStatus":"unread","id":"ps_20260618_1515_001","shortId":"P1433"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2292,7 +2294,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-18 12:20';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-18 15:20';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
