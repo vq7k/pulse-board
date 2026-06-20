@@ -2078,6 +2078,8 @@ const DATA = [
   {"date":"2026-06-20","time":"15:15","grade":"🔵","title":"John Jumper to join Anthropic","source":"HN 48601162","sourceUrl":"https://twitter.com/JohnJumperSci/status/2068001285173834106","domain":"AI Industry","summary":"跳过：人才流动/产品竞争动态，不是学习路线替代、技术弃用、权威定量判断或 AI 安全真实攻击案例。HN 48601162，115 points。","status":"skipped","insight":"","routeImpact":"不改变 Alex 接下来学什么。","pushCount":1,"alexStatus":"unread","id":"ps_20260620_1515_000","shortId":"P1458"},
   {"date":"2026-06-20","time":"15:15","grade":"🔵","title":"GPT-5.5 hallucinates 3x more than MIT-licensed GLM-5.2","source":"HN 48600167","sourceUrl":"https://arrowtsx.dev/bigger-models/","domain":"Model Evaluation","summary":"跳过：web_fetch 补充读取后确认是单篇博客观点，虽引用 Artificial Analysis 的 hallucination/benchmark 数字，对 T3 国产模型选型有观察价值，但还不是权威路线级判断；进入 GLM/uncertainty calibration 观察。HN 48600167，65 points。","status":"skipped","insight":"","routeImpact":"暂不改变当前 T2 Context Engineering 优先级；后续若出现多源定量证据，可纳入 T3 模型选型。","pushCount":1,"alexStatus":"unread","id":"ps_20260620_1515_001","shortId":"P1459"},
   {"date":"2026-06-20","time":"18:15","grade":"🔵","title":"smol.ai not much happened today","source":"AI News (smol.ai)","sourceUrl":"https://news.smol.ai/issues/26-06-19-not-much/","domain":"AI News","summary":"跳过：最新期刊为 2026-06-19，非今日；摘要包含 GLM-5.2、agent fan-out、loop engineering、Hermes Agent v0.17.0、Cloudflare agent infra，但本轮没有足够新增证据把 Alex 当前 T2 Context Engineering 学习路线改向。","status":"skipped","insight":"","routeImpact":"不改变当前 Agent/Context/RAG/AI Safety 学习优先级；GLM/Hermes 继续作为 T3/agent stack 观察。","pushCount":1,"alexStatus":"unread","id":"ps_20260620_1815_000","shortId":"P1460"},
+  {"date":"2026-06-20","time":"21:15","grade":"🔵","title":"HN: Hyundai buys Boston Dynamics","source":"HN 48600312","sourceUrl":"https://startupfortune.com/hyundai-takes-full-control-of-boston-dynamics-as-softbank-exits-for-325-million/","domain":"Robotics / Business","summary":"870 points；机器人公司股权/并购动态，不是 Alex 当前 Agent/Context/RAG/AI Safety 工程学习路线的替代方案、标准或安全案例。","status":"skipped","routeImpact":"不影响当前学习路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260620_2115_000","shortId":"P1461"},
+  {"date":"2026-06-20","time":"21:15","grade":"🔵","title":"HN: Project Valhalla, Explained: How a Decade of Work Arrives in JDK 28","source":"HN 48595511","sourceUrl":"https://www.jvm-weekly.com/p/project-valhalla-explained-how-a","domain":"Java / Runtime","summary":"614 points；HN 关键词命中属于噪声，实际是 Java/JDK 运行时专题，不是 AI/Agent/Context/RAG/AI Safety 路线级信号。","status":"skipped","routeImpact":"不影响当前学习路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260620_2115_001","shortId":"P1462"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2321,7 +2323,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-20 18:18';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-20 21:18';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
