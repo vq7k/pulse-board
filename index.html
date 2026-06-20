@@ -2071,6 +2071,7 @@ const DATA = [
   {"date":"2026-06-20","time":"09:50","grade":"🟡","title":"Configurable Clinical Information Extraction with Agentic RAG: What Works, What Breaks, and Why","source":"arXiv 2606.19602","sourceUrl":"https://arxiv.org/abs/2606.19602","domain":"Agentic RAG","summary":"在多文档、缺元数据、强时间依赖的真实长上下文里验证 Agentic RAG，失败点集中在 temporal reasoning、cross-document dependency 与 metadata triage。","status":"pushed","insight":"I011","routeImpact":"Agentic RAG 学习应关注 document metadata、temporal/cross-doc reasoning、on-premise pipeline 与失败模式，而不只学向量召回。","pushCount":1,"alexStatus":"unread","id":"ps_20260620_0950_001","shortId":"P1451"},
   {"date":"2026-06-20","time":"09:50","grade":"🟡","title":"Before the Pull Request: Mining Multi-Agent Coordination","source":"arXiv 2606.19616","sourceUrl":"https://arxiv.org/abs/2606.19616","domain":"Coding Agents / Multi-Agent Coordination","summary":"指出 coding agents 的信任缺口不只在 PR 结果，而在 PR 前多个 agent 如何声明、拆分、冲突和协调工作。","status":"pushed","insight":"","routeImpact":"Coding-agent 平台应记录 pre-PR coordination telemetry，用于评估任务分解、冲突避免、review trust 与团队协作机制。","pushCount":1,"alexStatus":"unread","id":"ps_20260620_0950_002","shortId":"P1452"},
   {"date":"2026-06-20","time":"09:50","grade":"🟡","title":"CogniFold: Always-On Proactive Memory via Cognitive Folding","source":"arXiv 2605.13438","sourceUrl":"https://arxiv.org/abs/2605.13438","domain":"Agent Memory","summary":"把 agent memory 从被动检索扩展到持续把事件流折叠成持久认知结构，方向上对应长期个人助理的 proactive memory。","status":"pushed","insight":"I011","routeImpact":"Agent Memory 学习可补充 reactive retrieval 之外的 memory consolidation、结构演化、主动组织和遗忘/更新机制。","pushCount":1,"alexStatus":"unread","id":"ps_20260620_0950_003","shortId":"P1453"},
+  {"date":"2026-06-20","time":"12:15","grade":"🔵","title":"Aikido Code Audit","source":"HN 48604741","sourceUrl":"https://www.aikido.dev/blog/introducing-code-audit-find-complex-vulnerabilities-hidden-in-your-codebase","domain":"Security / Code Audit","summary":"跳过：代码安全审计产品/工具发布，虽与代码安全相关，但不是 AI/LLM/agent 特定攻击案例、AI 安全框架或路线替代信号。HN 48604741，26 points。","status":"skipped","insight":"","routeImpact":"不改变 AI Safety 或 Agent 工程学习路线。","pushCount":1,"alexStatus":"unread","id":"ps_20260620_1215_000","shortId":"P1454"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2314,7 +2315,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-20 09:51';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-20 12:17';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
