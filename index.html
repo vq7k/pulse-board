@@ -2066,6 +2066,7 @@ const DATA = [
   {"date":"2026-06-19","time":"18:15","grade":"🔵","title":"The Korean telecom giant at the center of Anthropic's Mythos controversy","source":"HN 48584484","sourceUrl":"https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/","domain":"AI industry policy","summary":"Wired article about Anthropic Mythos export-control controversy; 114 points this round.","status":"skipped","routeImpact":"Policy/product controversy; does not directly change Alex's Agent/Context/RAG/AI Safety study plan.","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260619_1815_000","shortId":"P1446"},
   {"date":"2026-06-20","time":"08:19","grade":"🔵","title":"Norway imposes near ban on AI in elementary school","source":"HN 48600093","sourceUrl":"https://www.reuters.com/technology/norway-imposes-near-ban-ai-elementary-school-2026-06-19/","domain":"AI policy","summary":"跳过：教育政策动态，和 Alex 当前 Agent/Context/RAG/AI Safety 工程学习路线关联弱；不是技术弃用、权威定量判断或真实攻击案例。","status":"skipped","routeImpact":"暂不影响学习路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260620_0819_000","shortId":"P1447"},
   {"date":"2026-06-20","time":"08:19","grade":"🔵","title":"Hide Secrets from AI Agents and NPM install using Airgap","source":"HN 48602862","sourceUrl":"https://sauleau.com/notes/airgap-security-for-the-modern-ai-age.html","domain":"AI agent security","summary":"跳过：AI agent/npm install secret isolation 方向相关，但当前只是低热度单篇防护实践/工具说明，不是权威标准、真实攻击案例或足以改变学习路线的框架信号。","status":"skipped","routeImpact":"纳入 AI agent secret boundary 观察，不单独改变学习路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260620_0819_000","shortId":"P1448"},
+  {"date":"2026-06-20","time":"09:15","grade":"🔵","title":"DuckDB Internals Part 1","source":"HN 48553388","sourceUrl":"https://www.greybeam.ai/blog/duckdb-internals-part-1","domain":"Data/DB","summary":"跳过：DuckDB internals 技术文章，因域名含 ai 被关键词命中；不是 AI/Agent/Context/RAG/AI Safety 路线级信号。HN 48553388，431 points。","status":"skipped","insight":"","routeImpact":"无路线影响。","pushCount":1,"alexStatus":"unread","id":"ps_20260620_0915_000","shortId":"P1449"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2309,7 +2310,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-20 08:26';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-20 09:20';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
