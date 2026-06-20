@@ -2064,6 +2064,7 @@ const DATA = [
   {"date":"2026-06-19","time":"15:15","grade":"🔵","title":"Zen and the Art of Machine Learning Research","source":"HN 48549118","sourceUrl":"https://blog.jxmo.io/p/zen-and-the-art-of-machine-learning","domain":"ML research practice","summary":"ML research practice essay; 23 points this round.","status":"skipped","routeImpact":"General research-process advice, not a concrete route replacement, deprecation, benchmark, standard, or AI safety incident.","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260619_1515_001","shortId":"P1444"},
   {"date":"2026-06-19","time":"15:15","grade":"🔵","title":"Generative AI Is Having Its Herbalife Moment","source":"HN 48595144","sourceUrl":"https://www.whatwelo.st/p/generative-ai-is-having-its-herbalife","domain":"AI industry commentary","summary":"AI industry commentary item with 5 points this round.","status":"skipped","routeImpact":"Opinion/market commentary with low evidence strength; does not change what Alex should study next.","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260619_1515_002","shortId":"P1445"},
   {"date":"2026-06-19","time":"18:15","grade":"🔵","title":"The Korean telecom giant at the center of Anthropic's Mythos controversy","source":"HN 48584484","sourceUrl":"https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/","domain":"AI industry policy","summary":"Wired article about Anthropic Mythos export-control controversy; 114 points this round.","status":"skipped","routeImpact":"Policy/product controversy; does not directly change Alex's Agent/Context/RAG/AI Safety study plan.","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260619_1815_000","shortId":"P1446"},
+  {"date":"2026-06-20","time":"08:19","grade":"🔵","title":"Norway imposes near ban on AI in elementary school","source":"HN 48600093","sourceUrl":"https://www.reuters.com/technology/norway-imposes-near-ban-ai-elementary-school-2026-06-19/","domain":"AI policy","summary":"跳过：教育政策动态，和 Alex 当前 Agent/Context/RAG/AI Safety 工程学习路线关联弱；不是技术弃用、权威定量判断或真实攻击案例。","status":"skipped","routeImpact":"暂不影响学习路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260620_0819_000","shortId":"P1447"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2307,7 +2308,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-19 18:21';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-20 08:26';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
