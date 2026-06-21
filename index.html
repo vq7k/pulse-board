@@ -2082,6 +2082,7 @@ const DATA = [
   {"date":"2026-06-21","time":"12:18","grade":"🔵","title":"When I reject AI code even if it works","source":"HN 48614631","sourceUrl":"https://vinibrasil.com/when-i-reject-ai-code-even-if-it-works/","domain":"Coding Agents","summary":"77 points；文章主张 AI 代码即使可运行也应因不可解释、diff 过大、过早抽象或降低可理解性而拒绝。方向有启发，但属于个人实践经验，不是权威定量判断、技术弃用或路线替代信号。","status":"skipped","routeImpact":"作为 coding-agent review hygiene 观察，不改变当前学习路线。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260621_1218_000","shortId":"P1467"},
   {"date":"2026-06-21","time":"15:15","grade":"🟡","title":"Building Reliable Agentic AI Systems","source":"HN 48615680","sourceUrl":"https://martinfowler.com/articles/reliable-llm-bayer.html","domain":"Agentic RAG / Context Engineering","summary":"Martin Fowler 发布 Bayer PRINCE 案例：从 Search→Ask→Do 演进到基于 LangGraph 的 Agentic RAG，强调 context engineering 与 harness engineering：上下文选择、步骤间流动、工具边界、状态持久化、fallback、validation、reflection、observability 和 human review。","status":"pushed","insight":"I011/I012","routeImpact":"把 Alex 的 T2 Context Engineering 从概念/论文推进到企业级 Agentic RAG 架构实践；建议补 LangGraph workflow、retrieval validation、human review 和 observability。","pushCount":1,"alexStatus":"unread","id":"ps_20260621_1515_000","shortId":"P1468"},
   {"date":"2026-06-21","time":"15:15","grade":"🔵","title":"The 100k Whys of AI","source":"HN 48616017","sourceUrl":"https://lcamtuf.substack.com/p/the-100000-whys-of-ai","domain":"AI Commentary","summary":"43 points；web_fetch 超时，未能补充原文；按标题与来源先作观察，不作为独立路线级信号。","status":"skipped","routeImpact":"证据不足。","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260621_1515_001","shortId":"P1469"},
+  {"date":"2026-06-21","time":"18:15","grade":"🔵","title":"AI News (smol.ai) latest fetch timed out","source":"smol.ai latest","sourceUrl":"https://news.smol.ai/","domain":"AI News","summary":"signal-hub 原生 pulse smol latest 已按要求执行但两次超时/被 SIGTERM；本轮不把 smol.ai 判为内容信号。","status":"skipped","insight":"","routeImpact":"辅助信源超时；不影响本轮 HN 去重和路线判断。","pushCount":1,"alexStatus":"unread","id":"ps_20260621_1815_000","shortId":"P1470"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2325,7 +2326,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-06-21 15:19';
+  document.getElementById('metaText').textContent = '最后同步：2026-06-21 18:23';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
