@@ -2211,6 +2211,7 @@ const DATA = [
   {"date":"2026-07-15","time":"08:27","grade":"🟡","title":"A Low-Latency Fraud Detection Layer for Detecting Adversarial Interaction Patterns in LLM-Powered Agents","source":"arXiv 2605.01143","sourceUrl":"https://arxiv.org/abs/2605.01143","domain":"Agent Safety / Guardrails","summary":"把 agent 攻击从单轮 prompt 过滤提升到多轮交互模式检测，强调低延迟、运行时风控层，对生产 agent 的 prompt injection 与 escalation 防御更可迁移。","status":"pushed","insight":"","routeImpact":"强化 Alex AI Safety 学习路线：guardrail 不应只做输入过滤，要补 interaction-pattern monitoring、runtime risk scoring 和 multi-turn escalation 检测。","pushCount":1,"alexStatus":"unread","id":"ps_20260715_0827_001","shortId":"P1596"},
   {"date":"2026-07-15","time":"08:27","grade":"🟡","title":"GEIS: A Generation-Evaluation-Improvement Loop of Agent Skills for Long-Form Article Generation","source":"arXiv 2607.11503","sourceUrl":"https://arxiv.org/abs/2607.11503","domain":"Agent Skills / Evaluation Loops","summary":"把长文生成 pipeline 拆成可检查、可复用、可迭代改进的 skills loop，对 OpenClaw/Hermes plugin 的 skill evaluation 与优化闭环有直接启发。","status":"pushed","insight":"","routeImpact":"提醒 Alex 学 skills 生态时关注 generation-evaluation-improvement loop：技能不是静态 prompt，而应有评估器、改进策略和复用边界。","pushCount":1,"alexStatus":"unread","id":"ps_20260715_0827_002","shortId":"P1597"},
   {"date":"2026-07-15","time":"08:27","grade":"🟡","title":"MJ: Multi-turn LLM Jailbreaking via Decomposed Credit Assignment","source":"arXiv 2607.11070","sourceUrl":"https://arxiv.org/abs/2607.11070","domain":"AI Safety / Red Teaming","summary":"把多轮 jailbreak 的成败归因拆到每一轮贡献，提供更真实的 automated red-teaming 攻击建模；对多轮 agent safety eval 和防御验收有迁移价值。","status":"pushed","insight":"","routeImpact":"补 Alex 的安全路线：真实 agent 风险不是单轮 jailbreak，而是多轮诱导、状态累积和逐步升级，需要按 turn-level credit 做评测。","pushCount":1,"alexStatus":"unread","id":"ps_20260715_0827_003","shortId":"P1598"},
+  {"date":"2026-07-16","time":"09:50","grade":"🟡","title":"Declarative by Design, Assistable Only by Convention: Benchmarking Multi-Agent Frameworks for AI-Assistability","source":"arXiv 2602.11198","sourceUrl":"https://arxiv.org/abs/2602.11198","domain":"Agent Framework / Coding Agent Eval","summary":"提出 AI-assistability 指标，把多 Agent 框架是否容易被 coding assistant 正确生成代码拆成结构对齐与功能正确性；对框架选型和 Hermes/OpenClaw 插件 API 设计有迁移价值。","status":"pushed","insight":"","routeImpact":"提醒 Alex 评估 agent framework 不只看功能，还要看 declarative API、结构约束和 assistant 可生成性。","pushCount":1,"alexStatus":"unread","id":"ps_20260716_0950_000","shortId":"P1599"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2454,7 +2455,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-07-15 08:28';
+  document.getElementById('metaText').textContent = '最后同步：2026-07-16 09:50';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
