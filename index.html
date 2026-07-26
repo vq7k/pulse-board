@@ -2244,6 +2244,8 @@ const DATA = [
   {"date":"2026-07-25","time":"09:50","grade":"🔴","title":"GRADRAG: Cross-Component Prompt Adaptation for Coordinated Multi-Agent RAG","source":"arXiv 2607.21324","sourceUrl":"https://arxiv.org/abs/2607.21324","domain":"Agentic RAG / Multi-Agent","summary":"把多 agent RAG pipeline 建模为计算图，并把下游评估反馈结构化回传给上游组件做 prompt adaptation。","routeImpact":"直接贴合 Alex 的 Agentic RAG 路线：优化 RAG 不能只调单个 prompt，要做跨组件反馈、评价传播和 pipeline 级协同。","status":"pushed","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260725_0950_003","shortId":"P1630"},
   {"date":"2026-07-25","time":"09:50","grade":"🟡","title":"MemTools: A Unified Research Framework for Interoperable Agent Memory","source":"arXiv 2607.21404","sourceUrl":"https://arxiv.org/abs/2607.21404","domain":"Agent Memory","summary":"把 agent memory 的抽取、存储、更新、检索、评测等组件解耦，解决现有 memory system 架构碎片化问题。","routeImpact":"对 Alex 做 proactive context/materialized memory 有参考：memory 应该模块化、可替换、可评测，而不是绑死在某个数据集或框架里。","status":"pushed","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260725_0950_004","shortId":"P1631"},
   {"date":"2026-07-25","time":"09:50","grade":"🟡","title":"Robust Critics: Defending LLMs Against Multi-Turn Attacks","source":"arXiv 2607.20472","sourceUrl":"https://arxiv.org/abs/2607.20472","domain":"AI Safety / Guardrails","summary":"针对多轮对话中攻击意图逐步暴露的问题，用 critic/defense 视角处理安全误拒与漏检的权衡。","routeImpact":"对 Alex 学 guardrails 有工程启发：安全判断不能只看单轮输入，必须跟踪多轮意图、上下文漂移和防御代价。","status":"pushed","pushCount":1,"alexStatus":"unread","insight":"","id":"ps_20260725_0950_005","shortId":"P1632"},
+  {"date":"2026-07-26","time":"09:50","grade":"🔴","title":"OpenForgeRL: Train Harness-native Agents in Any Environment","source":"HF Daily / arXiv","sourceUrl":"https://arxiv.org/abs/2607.21557","domain":"Agent Training / Harness","summary":"把 Claude Code、Codex、OpenClaw 这类多进程/多轮/tool-use harness 作为训练环境来做端到端 SFT/RL，直接影响 Alex 理解 agent harness、评测与训练基础设施的边界。","status":"pushed","insight":"","routeImpact":"把学习重点从单个 agent prompt/tool 调用推进到 harness-native training：状态、工具、副作用和外部系统访问都要进入训练/评测闭环。","pushCount":1,"alexStatus":"unread","id":"ps_20260726_0950_000","shortId":"P1633"},
+  {"date":"2026-07-26","time":"09:50","grade":"🔴","title":"LLM Agents Are Latent Context Managers: Eliciting Self-Managed Context via State Proprioception","source":"arXiv","sourceUrl":"https://arxiv.org/abs/2606.30005","domain":"Context Engineering / Agent Memory","summary":"提出让 agent 感知自身上下文状态并自管理压缩/保留，而不是外部系统盲目裁剪，对长程 tool agent 的 context window 管理很关键。","status":"pushed","insight":"","routeImpact":"强化 Context Engineering 主线：需要让 agent 看到 context budget、证据状态和压缩风险，设计可感知的 context lifecycle。","pushCount":1,"alexStatus":"unread","id":"ps_20260726_0950_001","shortId":"P1634"},
 ];
 
 // ─── State ──────────────────────────────────────────────────────────────────
@@ -2487,7 +2489,7 @@ function updateStats() {
   document.getElementById('sYellow').textContent = DATA.filter(d=>d.grade==='🟡').length;
   document.getElementById('sSkipped').textContent = DATA.filter(d=>d.status==='skipped').length;
   document.getElementById('sConfirmed').textContent = DATA.filter(d=>getS(d.id)==='confirmed').length;
-  document.getElementById('metaText').textContent = '最后同步：2026-07-25 09:52';
+  document.getElementById('metaText').textContent = '最后同步：2026-07-26 09:51';
 }
 
 // ─── Events ─────────────────────────────────────────────────────────────────
